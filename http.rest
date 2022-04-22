@@ -1,1 +1,24 @@
-localhost:8000/products
+# http://localhost:8000/api/products
+
+
+# http://localhost:8000/api/products/3
+
+
+# POST http://localhost:8000/api/products
+# Accept: application/json
+# Content-Type: application/json
+
+# {
+#     "title": "Title",
+#     "image": "Image"
+# }
+
+PUT http://localhost:8000/api/products/11
+Accept: application/json
+Content-Type: application/json
+
+{
+    "title": "New Title",
+    "image": "New Image"
+}
+

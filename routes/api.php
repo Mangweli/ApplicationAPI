@@ -19,4 +19,4 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::get('products', [ProductController::class, 'index']);
+Route::apiResource('products', ProductController::class);
