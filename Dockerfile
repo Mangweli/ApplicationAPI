@@ -9,9 +9,9 @@ RUN apt-get update && apt-get install -y \
         libxml2-dev \
         libzip-dev \
         libonig-dev \
-        graphviz \
+        graphviz
 
-    && docker-php-ext-configure gd \
+RUN docker-php-ext-configure gd \
     && docker-php-ext-install -j$(nproc) gd \
     && docker-php-ext-install pdo_mysql \
     && docker-php-ext-install mysqli \
@@ -24,7 +24,3 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 COPY . .
 RUN composer install
-
-CMD php artisan serve --host=0.0.0.0
-
-EXPOSE 8000

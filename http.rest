@@ -1,10 +1,20 @@
 # http://localhost:8000/api/products
 
+# http://localhost:8000/api/user
 
-# http://localhost:8000/api/products/3
 
+#  http://localhost:8000/api/products/11
 
 # POST http://localhost:8000/api/products
+# Accept: application/json
+# Content-Type: application/json
+
+# {
+#     "title": "Title 3",
+#     "image": "Image 3"
+# }
+
+# POST http://localhost:8001/api/products/like/19
 # Accept: application/json
 # Content-Type: application/json
 
@@ -13,12 +23,16 @@
 #     "image": "Image"
 # }
 
-PUT http://localhost:8000/api/products/11
-Accept: application/json
-Content-Type: application/json
+# PUT http://localhost:8000/api/products/15
+# Accept: application/json
+# Content-Type: application/json
 
-{
-    "title": "New Title",
-    "image": "New Image"
-}
+# {
+#     "title": "New Title",
+#     "image": "New Image"
+# }
 
+
+# DELETE http://localhost:8000/api/products/15
+# Accept: application/json
+# Content-Type: application/json
